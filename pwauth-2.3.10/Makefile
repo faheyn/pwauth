@@ -27,8 +27,8 @@ TAR= README INSTALL CHANGES FORM_AUTH Makefile main.c checkfaillog.c \
 
 CFLAGS= $(LOCALFLAGS)
 
-pwauth: main.o auth_aix.o auth_bsd.o auth_hpux.o auth_mdw.o auth_openbsd.o \
-	auth_pam.o auth_sun.o fail_log.o lastlog.o nologin.o snooze.o
+pwauth: main.o \
+	auth_pam.o fail_log.o lastlog.o nologin.o snooze.o
 	$(CC) -o pwauth $(CFLAGS) main.o auth_aix.o auth_bsd.o auth_hpux.o \
 		auth_mdw.o auth_openbsd.o auth_pam.o auth_sun.o fail_log.o \
 		lastlog.o nologin.o snooze.o $(LIB)

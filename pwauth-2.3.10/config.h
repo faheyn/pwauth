@@ -6,7 +6,7 @@
  * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  *
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in
@@ -32,7 +32,7 @@
  */
 
 
-/* PWAUTH configuration file 
+/* PWAUTH configuration file
  *
  * Note - the default settings in this file are the way I use it.  I
  * guarantee you, they won't work for you.  You must change them.
@@ -121,9 +121,9 @@
 
    /* LOW-LEVEL OPTIONS */
 
-/* #define SHADOW_NONE		/**/
+#define SHADOW_NONE		/**/
 /* #define SHADOW_BSD		/* FreeBSD, NetBSD, OpenBSD, BSDI, OS X */
-#define SHADOW_SUN		/* Linux, Solaris, IRIX */
+/* #define SHADOW_SUN		/* Linux, Solaris, IRIX */
 /* #define SHADOW_JFH		/**/
 /* #define SHADOW_MDW		/**/
 /* #define SHADOW_AIX		/* AIX (see also AUTHENTICATE_AIX) */
@@ -131,7 +131,7 @@
 
    /* HIGH-LEVEL OPTIONS */
 
-/* #define PAM			/* Linux PAM or OpenPAM */
+#define PAM			/* Linux PAM or OpenPAM */
 /* #define PAM_OLD_OS_X		/* PAM on OS X version 10.5 or older */
 /* #define PAM_SOLARIS		/* PAM on Solaris other than 2.6 */
 /* #define PAM_SOLARIS_26	/* PAM on Solaris 2.6 */
@@ -278,7 +278,7 @@
  * to change the uid list.
  */
 
-#define SERVER_UIDS 30		/* user "wwwrun" on the author's system */
+/* #define SERVER_UIDS 30		/* user "wwwrun" on the author's system */
 
 
 /* If MIN_UNIX_UID is defined to an integer, logins with uid numbers less than
